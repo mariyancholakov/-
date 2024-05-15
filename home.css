@@ -56,6 +56,12 @@ body {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
+    transition: all 0.3s ease;
+}
+
+.dropdown .dropbtn:hover {
+    color: #FF675C;
+    font-weight: bold;
 }
 
 .dropdown-content {
@@ -63,8 +69,9 @@ body {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
+
 }
 
 .dropdown-content a {
