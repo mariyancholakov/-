@@ -2,43 +2,59 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    color: white;
 }
+
+/* navigation bar */
 
 /* TODO: Center the central links? */
 .navigation {
-    background-color: rgb(71, 130, 240);
+    /* background-color: rgb(71, 130, 240); */
+    width: 100%;
+    background-color: #7D97F4;
     position: sticky;
     top: 0;
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px 0;
+    padding: 1rem 0rem 1rem 0rem;
 }
-
+.logo{
+    display: flex;
+    justify-content: start;
+}
 .navigation a {
     display: block;
     text-align: center;
-    font-size: 17px;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
-
 .nav-list {
 
     display: flex;
+    width: 60%;
+    justify-content: space-around;
+    gap: 3rem;
+    list-style: none;
+}
+.nav-elements {
+
+    display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 3rem;
     list-style: none;
 }
 
 .nav-link {
     text-decoration: none;
     color: #f2f2f2;
-    font-size: 17px;
+    font-size: 1.6rem;
     transition: all 0.3s ease;
 }
 
 .nav-link:hover {
-    color: #FF675C;
+    color: #4747f0;
     font-weight: bold;
 }
 
@@ -48,7 +64,7 @@ body {
 }
 
 .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 1.7rem;
     border: none;
     outline: none;
     color: white;
@@ -60,7 +76,7 @@ body {
 }
 
 .dropdown .dropbtn:hover {
-    color: #FF675C;
+    color: #4747f0;
     font-weight: bold;
 }
 
@@ -85,4 +101,47 @@ body {
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/*Hero section*/
+
+.hero-section{
+    height: 90vh;
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero-section div{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section h1{
+    text-align: center;
+    color: #4747f0;
+    font-weight: bold;
+    font-size: 4.2em;
+    margin-bottom: 1em;
+}
+.hero-section span{
+    color: #FF675C;
+}
+.hero-section div button{
+    width: fit-content;
+    background-color: #4747f0;
+    color: white;
+    border: 2px solid #4747f0;
+    padding: 0.8rem 1.5rem 0.8rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+    box-shadow: #4747f066 2px 5px 6px;
+    transition: 0.3s;
+}
+.hero-section div button:hover{
+    background-color: #7D97F4;
+    border-color: #7D97F4;
 }
