@@ -1,118 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <title>eNap</title>
-    <link rel="stylesheet" href="navigation.css" />
-    <link rel="stylesheet" href="help.css" />
+    <link rel="stylesheet" href="navigation.css"/>
+    <link rel="stylesheet" href="help.css"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-  </head>
-  <body>
-    <header class="navigation" id="navigation">
-      <div class="logo" title="Национална Агенция по Приходите">
+</head>
+<body>
+<header class="navigation" id="navigation">
+    <div class="logo" title="Национална Агенция по Приходите">
         <a href="home.html">
-          <img
-            src="./assets/nra-logo.png"
-            alt="eNap logo"
-            style="width: 6rem"
-          />
+            <img
+                    src="./assets/nra-logo.png"
+                    alt="eNap logo"
+                    style="width: 6rem"
+            />
         </a>
-        <h2 style="margin-left: 1rem; font-weight: bold">НАП</h2>
-      </div>
-      <div class="nav-list">
+        <h2 style="margin-left: 1rem; font-weight: bold; font-size: 1.3em">
+            НАП
+        </h2>
+    </div>
+    <div class="nav-list">
         <ul class="nav-elements">
-          <li><a class="nav-link" href="home.html">Начало</a></li>
-          <li><a class="nav-link" href="#services.html">Услуги</a></li>
-          <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
-          <li><a class="nav-link" href="#help.html">Информация</a></li>
+            <li><a class="nav-link" href="home.html">Начало</a></li>
+            <li><a class="nav-link" href="#services.html">Услуги</a></li>
+            <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
+            <li><a class="nav-link" href="help.html">Информация</a></li>
         </ul>
         <div class="dropdown">
-          <button class="dropbtn">
-            Меню
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#about.html">За нас</a>
-            <a href="contact.html">Контакти</a>
-            <a href="#login.html">Вход</a>
-            <a href="#register.html">Регистрация</a>
-          </div>
+            <button class="dropbtn">
+                Меню
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="validation.html">Справки</a>
+                <a href="#about.html">За нас</a>
+                <a href="contact.html">Контакти</a>
+                <a href="map.html">Локации</a>
+                <a href="#login.html">Вход</a>
+                <a href="#register.html">Регистрация</a>
+            </div>
         </div>
-      </div>
-    </header>
+    </div>
+</header>
 
-    <section class="welcome-text">
-      <h1>Добре дошли в "Информация"</h1>
-    </section>
+<section class="welcome-text">
+    <h1>Добре дошли в "Информация"</h1>
+</section>
 
-    <section class="search-container">
-      <div class="search-box">
+<section class="search-container">
+    <div class="search-box">
         <label>
-          <input type="text" placeholder="Търсене..." name="search" />
+            <input type="text" placeholder="Търсене..." name="search"/>
         </label>
         <button type="submit"><i class="fa fa-search"></i></button>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section class="articles-container">
-      <h3>Често задавани въпроси</h3>
-      <div class="articles">
+<section class="articles-container">
+    <h3>Често задавани въпроси</h3>
+    <div class="articles">
         <article class="article">
-          <h2>Как да се регистрирам в системата?</h2>
-          <p>
-            За да се регистрирате в системата, трябва да изпълните следните
-            стъпки:
-          </p>
-          <ol>
-            <li>Отворете страницата за регистрация.</li>
-            <li>Въведете вашите данни в полетата.</li>
-            <li>Натиснете бутона "Регистрация".</li>
-          </ol>
+            <h2>Как да се регистрирам в системата?</h2>
+            <p>
+                За да се регистрирате в системата, трябва да изпълните следните
+                стъпки:
+            </p>
+            <ol>
+                <li>Отворете страницата за регистрация.</li>
+                <li>Въведете вашите данни в полетата.</li>
+                <li>Натиснете бутона "Регистрация".</li>
+            </ol>
         </article>
         <article class="article">
-          <h2>Как да вляза в системата?</h2>
-          <p>
-            За да влезнете в системата, трябва да изпълните следните стъпки:
-          </p>
-          <ol>
-            <li>Отворете страницата за вход.</li>
-            <li>Въведете вашите данни в полетата.</li>
-            <li>Натиснете бутона "Вход".</li>
-          </ol>
+            <h2>Как да вляза в системата?</h2>
+            <p>
+                За да влезнете в системата, трябва да изпълните следните стъпки:
+            </p>
+            <ol>
+                <li>Отворете страницата за вход.</li>
+                <li>Въведете вашите данни в полетата.</li>
+                <li>Натиснете бутона "Вход".</li>
+            </ol>
         </article>
         <article class="article">
-          <h2>Как да проверя данъците си?</h2>
-          <p>
-            За да проверите данъците си, трябва да изпълните следните стъпки:
-          </p>
-          <ol>
-            <li>Отворете страницата за данъци.</li>
-            <li>Въведете вашите данни в полетата.</li>
-            <li>Натиснете бутона "Проверка".</li>
-          </ol>
+            <h2>Как да проверя данъците си?</h2>
+            <p>
+                За да проверите данъците си, трябва да изпълните следните стъпки:
+            </p>
+            <ol>
+                <li>Отворете страницата за данъци.</li>
+                <li>Въведете вашите данни в полетата.</li>
+                <li>Натиснете бутона "Проверка".</li>
+            </ol>
         </article>
         <article class="article">
-          <h2>Как да се свържа с вас?</h2>
-          <p>За да се свържете с нас, трябва да изпълните следните стъпки:</p>
-          <ol>
-            <li>Отворете страницата за контакти.</li>
-            <li>Въведете вашите данни в полетата.</li>
-            <li>Натиснете бутона "Изпрати".</li>
-          </ol>
+            <h2>Как да се свържа с вас?</h2>
+            <p>За да се свържете с нас, трябва да изпълните следните стъпки:</p>
+            <ol>
+                <li>Отворете страницата за контакти.</li>
+                <li>Въведете вашите данни в полетата.</li>
+                <li>Натиснете бутона "Изпрати".</li>
+            </ol>
         </article>
         <article class="article">
-          <h2>Как да изтегля документи?</h2>
-          <p>За да изтеглите документи, трябва да изпълните следните стъпки:</p>
-          <ol>
-            <li>Отворете страницата за документи.</li>
-            <li>Изберете документа, който искате да изтеглите.</li>
-            <li>Натиснете бутона "Изтегли".</li>
-          </ol>
+            <h2>Как да изтегля документи?</h2>
+            <p>За да изтеглите документи, трябва да изпълните следните стъпки:</p>
+            <ol>
+                <li>Отворете страницата за документи.</li>
+                <li>Изберете документа, който искате да изтеглите.</li>
+                <li>Натиснете бутона "Изтегли".</li>
+            </ol>
         </article>
-      </div>
-    </section>
-  </body>
+    </div>
+</section>
+</body>
 </html>

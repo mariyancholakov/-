@@ -1,112 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
-    <link rel="stylesheet" href="contact.css" />
-    <link rel="stylesheet" href="navigation.css" />
-    <link rel="stylesheet" href="home.html" />
+    <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="navigation.css"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-  </head>
-  <body>
-    <header class="navigation" id="navigation">
-      <div class="logo" title="Национална Агенция по Приходите">
+</head>
+<body>
+<header class="navigation" id="navigation">
+    <div class="logo" title="Национална Агенция по Приходите">
         <a href="home.html">
-          <img
-            src="./assets/nra-logo.png"
-            alt="eNap logo"
-            style="width: 6rem"
-          />
+            <img
+                    src="./assets/nra-logo.png"
+                    alt="eNap logo"
+                    style="width: 6rem"
+            />
         </a>
-        <h2 style="margin-left: 1rem; font-weight: bold">НАП</h2>
-      </div>
-      <div class="nav-list">
+        <h2 style="margin-left: 1rem; font-weight: bold; font-size: 1.3em">
+            НАП
+        </h2>
+    </div>
+    <div class="nav-list">
         <ul class="nav-elements">
-          <li><a class="nav-link" href="home.html">Начало</a></li>
-          <li><a class="nav-link" href="services.html">Услуги</a></li>
-          <li><a class="nav-link" href="taxes.html">Данъци</a></li>
-          <li><a class="nav-link" href="help.html">Информация</a></li>
+            <li><a class="nav-link" href="home.html">Начало</a></li>
+            <li><a class="nav-link" href="#services.html">Услуги</a></li>
+            <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
+            <li><a class="nav-link" href="help.html">Информация</a></li>
         </ul>
         <div class="dropdown">
-          <button class="dropbtn">
-            Меню
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="about.html">За нас</a>
-            <a href="contact.html">Контакти</a>
-            <a href="login.html">Вход</a>
-            <a href="register.html">Регистрация</a>
-          </div>
+            <button class="dropbtn">
+                Меню
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="validation.html">Справки</a>
+                <a href="#about.html">За нас</a>
+                <a href="contact.html">Контакти</a>
+                <a href="map.html">Локации</a>
+                <a href="#login.html">Вход</a>
+                <a href="#register.html">Регистрация</a>
+            </div>
         </div>
-      </div>
-    </header>
-    <section id="contact-section" class="contact">
-      <div class="text">
+    </div>
+</header>
+
+<section id="contact-section" class="contact">
+    <div class="text">
         <h1>Свържете се с нас</h1>
         <p>
-          Имате въпрос и искате да се свържете с нас? Попълнете
-          <span style="color: #4748f0">формата</span> и изпратете съобщение.
-          Можете също да ни пишете на имейл:
-          <a style="color: #ff675c" href="infocenter@nra.bg"
+            Имате въпрос и искате да се свържете с нас? Попълнете
+            <span style="color: #4748f0">формата</span> и изпратете съобщение.
+            Можете също да ни пишете на имейл:
+            <a style="color: #ff675c" href="infocenter@nra.bg"
             >infocenter@nra.bg</a
-          >
+            >
 
-          <br />
-          или да сe обадите на телефон: <br />
-          <a href="" style="color: #ff675c">0700 18 700</a>
+            <br/>
+            или да сe обадите на телефон: <br/>
+            <a href="" style="color: #ff675c">0700 18 700</a>
         </p>
-      </div>
-      <form>
+    </div>
+    <form>
         <div>
-          <div class="label-input">
-            <label for="">Име:</label>
-            <input
-              style="width: 14em; height: 6vh"
-              type="text"
-              placeholder="Иван Иванов"
-            />
-          </div>
-          <div class="label-input">
-            <label for="">Телефон:</label>
-            <input
-              style="width: 14em; height: 6vh"
-              type="tel"
-              placeholder="+359 00 000 00 00"
-            />
-          </div>
+            <div class="label-input">
+                <label for="">Име:</label>
+                <input
+                        style="width: 14em; height: 6vh"
+                        type="text"
+                        placeholder="Иван Иванов"
+                />
+            </div>
+            <div class="label-input">
+                <label for="">Телефон:</label>
+                <input
+                        style="width: 14em; height: 6vh"
+                        type="tel"
+                        placeholder="+359 00 000 00 00"
+                />
+            </div>
         </div>
         <label for="">Имейл:</label>
         <input
-          id="email"
-          style="width: 70%"
-          type="email"
-          placeholder="user@gmail.com"
-          required
+                id="email"
+                style="width: 70%"
+                type="email"
+                placeholder="user@gmail.com"
+                required
         />
 
         <label for="">Съобщение:</label>
         <input
-          id="message"
-          style="width: 70%; height: 10vh"
-          type="text"
-          placeholder="Тук опишете своя проблем"
-          required
+                id="message"
+                style="width: 70%; height: 10vh"
+                type="text"
+                placeholder="Тук опишете своя проблем"
+                required
         />
         <button onclick="showMessage()" id="showButton">Изпрати:</button>
-      </form>
-    </section>
-    <div id="pop-up-message" class="pop-up-message">
-      <button onclick="closeMessage()" id="closeButton">&#10005;</button>
-      <p>
+    </form>
+</section>
+<div id="pop-up-message" class="pop-up-message">
+    <button onclick="closeMessage()" id="closeButton">&#10005;</button>
+    <p>
         Съобщението ви беше изпратено успешно!
         <span style="color: #ff675c">Очаквайте отговор скоро.</span>
-      </p>
-    </div>
-    <script src="pop-up-function.js"></script>
-  </body>
+    </p>
+</div>
+<script src="pop-up-function.js"></script>
+</body>
 </html>
