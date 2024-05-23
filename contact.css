@@ -7,7 +7,7 @@ body {
     font-weight: bold;
 }
 .contact{
-    margin-top: 2rem;
+    margin-top: 4rem;
     height: 70vh;
     width: 100%;
     background-color: white;
@@ -77,15 +77,17 @@ body {
     color: white;
     width: fit-content;
     border: 2px solid #4747f0;
-    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+    padding: 0.5rem 2.6rem 0.5rem 2.6rem;
+    letter-spacing: 0.6px;
     border-radius: 1rem;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1rem;
     box-shadow: #4747f066 2px 5px 6px;
     transition: 0.3s;
 }
 .contact button:hover{
     background-color: #FF675C;
+    border-color: transparent;
     cursor: pointer;
 }
 .pop-up-message{
@@ -113,4 +115,8 @@ body {
     border: none;
     background-color: white;
     font-size: 20px;
+}
+.pop-up-message button:hover{
+    color: #4747f0;
+    cursor: pointer;
 }

@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 0rem 1rem 0rem;
+    padding: 0.5rem 0rem 0.5rem 0rem;
 }
 .logo{
     display: flex;
@@ -21,7 +21,7 @@
 .navigation a {
     display: block;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .nav-list {
@@ -43,7 +43,6 @@
 .nav-link {
     text-decoration: none;
     color: #f2f2f2;
-    font-size: 1.3rem;
     transition: all 0.3s ease;
 }
 
@@ -58,7 +57,7 @@
 }
 
 .dropdown .dropbtn {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     border: none;
     outline: none;
     color: white;
@@ -70,6 +69,7 @@
 }
 
 .dropdown .dropbtn:hover {
+    cursor: pointer;
     color: #4747f0;
     font-weight: bold;
 }
@@ -91,6 +91,14 @@
     text-decoration: none;
     display: block;
     text-align: left;
+}
+.dropdown-content a:hover{
+    color: #4747f0;
+    cursor: pointer;
+}
+.dropdown-content a:active{
+    color: #FF675C;
+    font-weight: bold;
 }
 
 .dropdown:hover .dropdown-content {
