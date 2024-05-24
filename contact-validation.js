@@ -81,6 +81,7 @@ const validateInputs = () => {
 
     closeButton.addEventListener('click', () => {
         popMessage.classList.remove("active");
+        window.location.reload(true)
     })
     }
 }
