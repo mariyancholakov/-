@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Inter, sans-serif;
-    color: black;
+    color: #19108E;
     font-weight: bold;
 }
 
@@ -19,12 +19,12 @@ body {
 }
 
 .text {
-    font-weight: 600;
+    font-weight: 500;
     width: 25%;
     height: 0vh;
     text-align: center;
-    letter-spacing: 0.13rem;
-    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
 }
 
 .text h1 {
@@ -37,21 +37,28 @@ body {
 }
 
 .contact form {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    border: 2px solid #4748F0;
+    align-items: start; */
+    border: 2px solid #19108E;
     border-radius: 5px;
     width: 40%;
     height: fit-content;
     padding: 1.5rem 2rem 1.5rem 4rem;
 }
+.input-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 2em;
+}
 
-.contact form div {
+.first-two-elements {
     display: flex;
     justify-content: center;
     column-gap: 40px;
+    margin-bottom: 0;
 }
 
 .contact label {
@@ -59,26 +66,35 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.label-input {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}
-
 .contact input {
     background-color: #E3EAFD;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 8px;
     width: 28vh;
     height: 4vh;
     padding: 0.4rem 0rem 0.4rem 1.5rem;
-    margin-bottom: 2rem;
+
     color: #4747f0;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 400;
+}
+.input-element input:focus{
+    outline: 0;
+}
+.input-element.success input{ 
+    border-color: #5dcd6a;
+}
+.input-element.error input{
+    border-color: #FF675C;
+}
+.input-element .error{
+    color: #FF675C;
+    font-size: 10px;
+    margin-top: 2px;
 }
 
 .contact ::placeholder {
+    font-weight: 300;
     color: #7D97F4;
 }
 
