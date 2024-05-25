@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Inter, sans-serif;
-    color: white;
+    color: #19108E;
 }
 
 /*Hero section*/
@@ -47,4 +47,5 @@ body {
 .hero-section div button:hover{
     background-color: #FF675C;
     border-color: transparent;
+    cursor: pointer;
 }

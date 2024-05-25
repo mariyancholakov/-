@@ -1,74 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Регистрация</title>
-    <link rel="stylesheet" href="register.css">
-    <link rel="stylesheet" href="navigation.css">
-</head>
-<body>
-<header class="navigation" id="navigation">
-    <div class="logo" title="Национална Агенция по Приходите">
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="home.html" />
+  </head>
+  <body>
+    <header class="navigation" id="navigation">
+      <div class="logo" title="Национална Агенция по Приходите">
         <a href="home.html">
-            <img
-                    src="./assets/nra-logo.png"
-                    alt="eNap logo"
-                    style="width: 6rem"
-            />
+          <img
+            src="./assets/nra-logo.png"
+            alt="eNap logo"
+            style="width: 6rem"
+          />
         </a>
-        <h2 style="margin-left: 1rem; font-weight: bold">
-            НАП
-        </h2>
-    </div>
-    <div class="nav-list">
+        <h2 style="margin-left: 1rem; font-weight: bold">НАП</h2>
+      </div>
+      <div class="nav-list">
         <ul class="nav-elements">
-            <li><a class="nav-link" href="home.html">Начало</a></li>
-            <li><a class="nav-link" href="#services.html">Услуги</a></li>
-            <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
-            <li><a class="nav-link" href="#help.html">Информация</a></li>
+          <li><a class="nav-link" href="home.html">Начало</a></li>
+          <li><a class="nav-link" href="#services.html">Услуги</a></li>
+          <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
+          <li><a class="nav-link" href="#help.html">Информация</a></li>
         </ul>
         <div class="dropdown">
-            <button class="dropbtn">
-                Меню
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="#about.html">За нас</a>
-                <a href="contacts.html">Контакти</a>
-                <a href="login.html">Вход</a>
-                <a href="register.html">Регистрация</a>
-            </div>
+          <button class="dropbtn">
+            Меню
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#about.html">За нас</a>
+            <a href="contacts.html">Контакти</a>
+            <a href="login.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
         </div>
+      </div>
+    </header>
+
+    <div class="registerform">
+      <form>
+        <br /><br />
+        <h1>Регистрация</h1>
+        <div>
+          <label>Собствено име</label>
+          <input placeholder="Собствено име" />
+          <br />
+          <label>Фамилно име</label>
+          <input placeholder="Фамилно име" />
+          <br />
+          <label>Имейл</label>
+          <input placeholder="Имейл" />
+          <br />
+          <label>Парола</label>
+          <input placeholder="Парола" />
+          <br />
+          <p>Вече имате акаунт?<a href="login.html">Влезте!</a></p>
+          <br />
+          <button class="button">Създай акаунт</button>
+        </div>
+      </form>
+      <div>
+        <img src="assets/registerImage.png" />
+      </div>
     </div>
-</header>
-
-     <div class="registerform">
-
-         <form>
-             <br><br>
-             <h1>Регистрация</h1>
-             <div>
-                 <label>Собствено име</label>
-                 <input placeholder="Собствено име">
-                 <br>
-                 <label>Фамилно име</label>
-                 <input placeholder="Фамилно име">
-                 <br>
-                 <label>Имейл</label>
-                 <input placeholder="Имейл">
-                 <br>
-                 <label>Парола</label>
-                 <input placeholder="Парола">
-                 <br>
-                 <p>Вече имате акаунт?<a href="login.html">Влезте!</a></p>
-                 <br>
-                 <button class="button">Създай акаунт</button>
-             </div>
-         </form>
-         <div>
-             <img src="assets/registerImage.png">
-         </div>
-     </div>
-
-</body>
+  </body>
 </html>
