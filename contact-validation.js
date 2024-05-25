@@ -69,15 +69,21 @@ const validateInputs = () => {
     }
 
     if(isValid){
-    const showButton = document.getElementById("showButton")
     const closeButton = document.getElementById("closeButton")
     const popMessage = document.getElementById("pop-up-message")
-
-
-    showButton.addEventListener('click', (e) => {
-    e.preventDefault()
+    let sec = 0
+    const counter = document.getElementById("counter")
+    
     popMessage.classList.add("active");
-    })
+
+    setInterval(() => {
+            counter.innerHTML = '5' - sec
+            sec++
+            if(counter.innerHTML === '0'){
+                popMessage.classList.remove("active");
+                window.location.reload(true)
+            }
+    }, 1000)
 
     closeButton.addEventListener('click', () => {
         popMessage.classList.remove("active");

@@ -121,7 +121,7 @@ body {
 .pop-up-message {
     background-color: white;
     width: 15em;
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1.5rem 3rem 0rem 3rem;
     line-height: 2rem;
     border: 2px solid #4748f0;
     border-radius: 5px;
@@ -150,4 +150,8 @@ body {
 .pop-up-message button:hover {
     color: #4747f0;
     cursor: pointer;
+}
+.pop-up-message small{
+    float: right;
+    padding-bottom: 1rem;
 }
