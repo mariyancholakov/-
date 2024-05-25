@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    font-family: Inter, sans-serif;
+}
+.page{
+    display:flex;
+    justify-content:space-between;
+}
+.description {
+    width:500px;
+
+    color: #4747f0;
+
+    margin:0;
+    padding:25px;
+}
+.heading {
+    color: #FF675C;
+
+    text-align:left;
+    font-size:47px;
+
+    margin-bottom:5px;
+}
+.button{
+    background-color: #4747f0;
+    color:white;
+
+    border:black;
+    border-width:0px;
+    border-radius:15px;
+
+    padding:10px 20px;
+
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+.button:hover {
+    background-color: #FF675C;
+    color: white;
+
+    border:black;
+    border-width:0px;
+    border-radius:15px;
+
+    padding:10px 20px;
+
+    cursor: pointer;
+
+}
