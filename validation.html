@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Справка - валидация</title>
+
+    <link rel="stylesheet" href="navigation.css"/>
+    <link rel="stylesheet" href="validation.css"/>
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+<header class="navigation" id="navigation">
+    <div class="logo" title="Национална Агенция по Приходите">
+        <a href="home.html">
+            <img
+                    src="./assets/nra-logo.png"
+                    alt="eNap logo"
+                    style="width: 6rem"
+            />
+        </a>
+        <h2 style="margin-left: 1rem; font-weight: bold; font-size: 1.3em">
+            НАП
+        </h2>
+    </div>
+    <div class="nav-list">
+        <ul class="nav-elements">
+            <li><a class="nav-link" href="home.html">Начало</a></li>
+            <li><a class="nav-link" href="#services.html">Услуги</a></li>
+            <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
+            <li><a class="nav-link" href="help.html">Информация</a></li>
+        </ul>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Меню
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="validation.html">Справки</a>
+                <a href="#about.html">За нас</a>
+                <a href="contact.html">Контакти</a>
+                <a href="map.html">Локации</a>
+                <a href="#login.html">Вход</a>
+                <a href="#register.html">Регистрация</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="menu-container">
+    <h2>Справки</h2>
+    <p>Тук може да проверите валидността на ЕГН, ЕИК и ЛНЧ. След като изберете желаният от вас вид идентификатор, ще
+        трябва да въведете съответните данни в предоставеното поле. След това, натиснете бутона "Провери" за да получите
+        информацията за валидността на въведения идентификатор. Всички данни се обработват локално.</p>
+    <p>Изберете вид идентификатор за справка:</p>
+
+    <div class="tab-menu">
+        <button class="tab-button active">Справка ЕГН</button>
+        <button class="tab-button">Справка ЕИК</button>
+        <button class="tab-button">Справка ЛНЧ</button>
+    </div>
+    <div>
+        <div id="tab1" class="tab-content active">
+            <h3>Справка ЕГН</h3>
+
+            <label for="egn">Въведете ЕГН:</label>
+            <input type="text" id="egn" name="egn" required>
+            <p id="egnResult"></p>
+
+        </div>
+
+        <div id="tab2" class="tab-content">
+            <h3>Справка ЕИК</h3>
+
+            <label for="eik">Въведете ЕИК:</label>
+            <input type="text" id="eik" name="eik" required>
+            <button type="submit">Провери</button>
+
+        </div>
+
+        <div id="tab3" class="tab-content">
+            <h3>Справка ЛНЧ</h3>
+
+            <label for="lnch">Въведете ЛНЧ:</label>
+            <input type="text" id="lnch" name="lnch" required>
+            <button type="submit">Провери</button>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+<script src="validation.js"></script>
+</html>

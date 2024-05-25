@@ -1,16 +1,35 @@
 <!DOCTYPE html>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Inter, sans-serif;
+        color: white;
+    }
+
+    #embed-map-display img.text-marker {
+        max-width: none !important;
+        background: none !important;
+    }
+
+    img {
+        max-width: none
+    }
+</style>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
-    <title>eNap</title>
-    <link rel="stylesheet" href="home.css"/>
+    <title>Локации</title>
+
     <link rel="stylesheet" href="navigation.css"/>
     <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
 </head>
 <body>
+
 <header class="navigation" id="navigation">
     <div class="logo" title="Национална Агенция по Приходите">
         <a href="home.html">
@@ -48,18 +67,13 @@
     </div>
 </header>
 
-<section class="hero-section">
-    <div>
-        <h1><span>Отговорни</span> днес, <span>сигурни</span> за утре!</h1>
-        <a href="">
-            <button>Провери данъците си</button>
-        </a>
+<div style="max-width:100%;max-height:100%;overflow:hidden;color:red;width:50rem;height:50rem;">
+    <div id="embed-map-display" style="height:100%; width:100%;max-width:100%;">
+        <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/search?q=НАП&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
     </div>
-    <img
-            style="width: 45%; height: 70%"
-            src="assets/hero-section image.png"
-            alt="НАП снимка"
-    />
-</section>
+
+</div>
+
 </body>
 </html>
