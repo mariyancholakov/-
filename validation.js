@@ -17,7 +17,7 @@ tabButtons.forEach(function (button, index) {
 
 function validateEGN(egn) {
     if (typeof egn !== 'string' || egn.length !== 10) {
-        return { isValid: false };
+        return {isValid: false};
     }
 
     let year = parseInt(egn.slice(0, 2), 10);
@@ -36,7 +36,7 @@ function validateEGN(egn) {
 
     let date = new Date(year, month - 1, day);
     if (date.getFullYear() !== year || date.getMonth() !== month - 1 || date.getDate() !== day) {
-        return { isValid: false };
+        return {isValid: false};
     }
 
     let genderDigit = parseInt(egn.slice(8, 9), 10);
@@ -55,7 +55,7 @@ function validateEGN(egn) {
 
     let isValid = remainder === parseInt(egn[9], 10);
 
-    return { isValid, birthDate: date, gender };
+    return {isValid, birthDate: date, gender};
 }
 
 document.getElementById('egn').addEventListener('input', function () {
@@ -73,7 +73,7 @@ document.getElementById('egn').addEventListener('input', function () {
 
 function validateEIK(eik) {
     if (typeof eik !== 'string' || (eik.length !== 9 && eik.length !== 13)) {
-        return { isValid: false };
+        return {isValid: false};
     }
 
     let weights;
@@ -106,7 +106,7 @@ function validateEIK(eik) {
 
     let isValid = remainder === parseInt(eik[controlDigitPosition], 10);
 
-    return { isValid, eik };
+    return {isValid, eik};
 }
 
 document.getElementById('eik').addEventListener('input', function () {
