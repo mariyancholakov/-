@@ -37,23 +37,27 @@ const validateInputs = () => {
     let isValid = true
 
     if(NameValue === ''){
-        setError(Name, "Name is required")
+        setError(Name, "Необходимо е име")
         isValid = false
     }
     else{
         setSuccess(Name)
     }
-    
-    if(phoneValue.length != 10){
-        setError(phone, "Phone number must contain 10 digits")
+
+    if(phoneValue === ''){
+        setError(phone, "Необходим е телефонен номер")
         isValid = false
     }
-    else{
+    else if(phoneValue.length === 10 || phoneValue.length === 13){
         setSuccess(phone)
+    }
+    else{
+        setError(phone, "Телефонният номер e невалиден")
+        isValid = false
     }
 
     if(emailValue === ''){
-        setError(email, "Email is required ")
+        setError(email, "Необходим е имейл")
         isValid = false
     }
     else{
@@ -61,7 +65,7 @@ const validateInputs = () => {
     }
 
     if(messageValue === ''){
-        setError(message, "Message is required")
+        setError(message, "Необходимо е съобщение")
         isValid = false
     }
     else{
@@ -69,15 +73,21 @@ const validateInputs = () => {
     }
 
     if(isValid){
-    const showButton = document.getElementById("showButton")
     const closeButton = document.getElementById("closeButton")
     const popMessage = document.getElementById("pop-up-message")
-
-
-    showButton.addEventListener('click', (e) => {
-    e.preventDefault()
+    let sec = 0
+    const counter = document.getElementById("counter")
+    
     popMessage.classList.add("active");
-    })
+
+    setInterval(() => {
+            counter.innerHTML = '5' - sec
+            sec++
+            if(counter.innerHTML === '0'){
+                popMessage.classList.remove("active");
+                window.location.reload(true)
+            }
+    }, 1000)
 
     closeButton.addEventListener('click', () => {
         popMessage.classList.remove("active");
