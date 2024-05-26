@@ -27,7 +27,14 @@ body {
     color: #4747f0;
     font-weight: bold;
     font-size: 3em;
-    margin-bottom: 1.5em;
+    margin-bottom: 0;
+}
+.hero-section h4{
+    text-align: center;
+    font-weight: 500;
+    width: 80%;
+    margin-bottom: 2.5rem;
+    font-size: 17px;
 }
 .hero-section span{
     color: #FF675C;
