@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Данъци</title>
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="taxes.css" />
+    <link rel="stylesheet" href="home.html" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation" id="navigation">
+      <div class="logo" title="Национална Агенция по Приходите">
+        <a href="home.html">
+          <img
+            src="./assets/nra-logo.png"
+            alt="eNap logo"
+            style="width: 6rem"
+          />
+        </a>
+        <h2 style="margin-left: 1rem; font-weight: bold; font-size: 1.3em">
+          НАП
+        </h2>
+      </div>
+      <div class="nav-list">
+        <ul class="nav-elements">
+          <li><a class="nav-link" href="home.html">Начало</a></li>
+          <li><a class="nav-link" href="#services.html">Услуги</a></li>
+          <li><a class="nav-link" href="taxes.html">Данъци</a></li>
+          <li><a class="nav-link" href="help.html">Информация</a></li>
+        </ul>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Меню
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="validation.html">Справки</a>
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакти</a>
+            <a href="map.html">Локации</a>
+            <a href="login.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="taxes-content">
+      <div class="text">
+        <h1>Данъци</h1>
+        <p>
+          <span style="color: #4748f0"
+            >Тук можете да видите примерен данък върху заплатата от началото на
+            2024г. до момента.</span
+          >
+          Данъкът върху заплатата се изчислява като процент от облагаемата сума,
+          която пък е част от брутната заплата. Можете също и да изчислите
+          нетната си заплата и осигуровките, като въведете необходимите данни в
+          калкулатора
+        </p>
+      </div>
+      <div class="table-calculator">
+        <div class="taxes-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Месец (за 2024)</th>
+                <th>Брутна заплата <br />(лв)</th>
+                <th>Облагаема сума</th>
+                <th>
+                  <span style="color: #4748f0"
+                    >Данък върху заплатата <br />(лв)</span
+                  >
+                </th>
+                <th>Нетна заплата <br />(лв)</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Януари 2024</td>
+                <td>2000</td>
+                <td>1823.96</td>
+                <td><span>176.04</span></td>
+                <td>2008.96</td>
+              </tr>
+
+              <tr>
+                <td>Февруари 2024</td>
+                <td>2000</td>
+                <td>1823.96</td>
+                <td><span>176.04</span></td>
+                <td>2008.96</td>
+              </tr>
+
+              <tr>
+                <td>Март 2024</td>
+                <td>2100</td>
+                <td>1924.96</td>
+                <td><span>175.04</span></td>
+                <td>1924.96</td>
+              </tr>
+
+              <tr>
+                <td>Април 2024</td>
+                <td>2200</td>
+                <td>2008.96</td>
+                <td><span>191.04</span></td>
+                <td>2008.96</td>
+              </tr>
+
+              <tr>
+                <td>Май 2024</td>
+                <td>2400</td>
+                <td>2166.96</td>
+                <td><span>233.04</span></td>
+                <td>2166.96</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="calculator">
+          <div class="content">
+            <button onclick="closeActiveResults()" id="closeButton">
+              <i class="fa fa-caret-up" aria-hidden="true"></i>
+            </button>
+            <h2 style="text-align: center; font-weight: 500">
+              Калкулатор на нетна заплата
+            </h2>
+            <div class="label-input-button">
+              <label style="font-weight: 500" for="">Бруто заплата: </label>
+              <input
+                type="number"
+                id="brutSalary"
+                placeholder="Въведете брутна заплата в лв."
+              />
+              <button id="submitButton" onclick="displayResults()">
+                Изчисли
+              </button>
+            </div>
+            <small id="errorMessage"></small>
+            <div id="results" class="results">
+              <p style="font-size: 17px; font-weight: bold">
+                Нетна заплата:
+                <span style="color: #ff675c" id="netSalaryResult"></span>
+              </p>
+              <p>
+                Здравно осигуряване: <span id="healthInsuranceResult"></span>
+              </p>
+              <p>
+                Пенсионно осигуряване: <span id="pensionInsuranceResult"></span>
+              </p>
+              <p>
+                Допълнителни осигуровки <br />
+                (трудова злополука, професионална болест, безработица):
+                <span id="additionalInsurancesResult"></span>
+              </p>
+              <p>Облагаема сума: <span id="taxableAmountResult"></span></p>
+              <p>Данък общ доход: <span id="incomeTaxResult"></span></p>
+              <small
+                >(<span style="color: #4748f0">Уточнение:</span> Калкулаторът
+                работи с предварително зададени процентни <br />
+                стойности на осигуровките)</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="taxesCalculator.js"></script>
+  </body>
+</html>

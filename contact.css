@@ -37,10 +37,6 @@ body {
 }
 
 .contact form {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start; */
     border: 2px solid #19108E;
     border-radius: 5px;
     width: 40%;
@@ -51,7 +47,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-bottom: 2em;
+    margin-bottom: 1.2em;
 }
 
 .first-two-elements {
@@ -89,8 +85,9 @@ body {
 }
 .input-element .error{
     color: #FF675C;
-    font-size: 10px;
-    margin-top: 2px;
+    font-size: 12px;
+    height: 1rem;
+    font-weight: 400;
 }
 
 .contact ::placeholder {
@@ -121,7 +118,7 @@ body {
 .pop-up-message {
     background-color: white;
     width: 15em;
-    padding: 1.5rem 3rem 1.5rem 3rem;
+    padding: 1.5rem 3rem 0rem 3rem;
     line-height: 2rem;
     border: 2px solid #4748f0;
     border-radius: 5px;
@@ -150,4 +147,8 @@ body {
 .pop-up-message button:hover {
     color: #4747f0;
     cursor: pointer;
+}
+.pop-up-message small{
+    float: right;
+    padding-bottom: 1rem;
 }
