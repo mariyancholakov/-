@@ -31,47 +31,57 @@
           <li><a class="nav-link" href="help.html">Информация</a></li>
         </ul>
         <div class="dropdown">
-          <button class="dropbtn">
-            Меню
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="validation.html">Справки</a>
-            <a href="about.html">За нас</a>
-            <a href="contact.html">Контакти</a>
-            <a href="map.html">Локации</a>
-            <a href="login.html">Вход</a>
-            <a href="register.html">Регистрация</a>
-          </div>
+            <button type="submit" class="dropbtn">
+                Меню
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="validation.html">Справки</a>
+                <a href="about.html">За нас</a>
+                <a href="contact.html">Контакти</a>
+                <a href="map.html">Локации</a>
+                <a href="login.html">Вход</a>
+                <a href="register.html">Регистрация</a>
+            </div>
         </div>
       </div>
     </header>
+         <form id="signupform">
+             <br><br>
+             <h1>Регистрация</h1>
+             <div>
+                 <label>Собствено име</label>
+                 <input type="text" required placeholder="Собствено име">
+                 <br>
+                 <label>Фамилно име</label>
+                 <input type="text" required placeholder="Фамилно име">
+                 <br>
+                 <label>Имейл</label>
+                 <input  type="email" required placeholder="Имейл">
+                 <br>
+                 <label>Парола</label>
+                 <input type="password" required placeholder="Парола">
+                 <br>
+                 <p>Вече имате акаунт?<a href="login.html">Влезте!</a></p>
+                 <br>
+                 </div>
 
-    <div class="registerform">
-      <form>
-        <br /><br />
-        <h1>Регистрация</h1>
-        <div>
-          <label>Собствено име</label>
-          <input placeholder="Собствено име" />
-          <br />
-          <label>Фамилно име</label>
-          <input placeholder="Фамилно име" />
-          <br />
-          <label>Имейл</label>
-          <input placeholder="Имейл" />
-          <br />
-          <label>Парола</label>
-          <input placeholder="Парола" />
-          <br />
-          <p>Вече имате акаунт?<a href="login.html">Влезте!</a></p>
-          <br />
-          <button class="button">Създай акаунт</button>
-        </div>
-      </form>
-      <div>
-        <img src="assets/registerImage.png" />
-      </div>
-    </div>
-  </body>
+             <button class="createaccount" id="createaccount" >Създай акаунт</button>
+
+             <div id="message" class="message">
+                 <br>
+                 <span>Регистрирахте се успешно!</span>
+                 <br>
+                 <button class="close" id="close">Затваряне</button>
+            </div>
+         </form>
+
+         <div>
+             <img src="assets/registerImage.png">
+         </div>
+
+     </div>
+
+<script src="register.js"></script>
+</body>
 </html>

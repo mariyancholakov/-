@@ -80,5 +80,56 @@ a{
     color: #ffe57f;
 }
 
+.message {
+    position: fixed;
+    z-index: 1000;
+    display: none;
+
+    border: solid;
+    border-width:5px;
+    border-color: #FF675C;
+    border-radius: 20px;
+
+    padding: 20px;
+    top: 150px;
+    left: calc( 50% - 225px );
+
+    background-color: #FF675C;
+    color: white;
+
+    font-size: 60px;
+    text-align: center;
+    width: 450px;
+}
+
+.message.open {
+    display: block;
+}
+
+.close{
+    background-color: #4747f0;
+    color:white;
+
+    border:black;
+    border-width:0px;
+    border-radius:15px;
+
+    padding:10px 20px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+.close:hover {
+    background-color: #7D97F4;
+    color: white;
+
+    border:black;
+    border-width:0px;
+    border-radius:15px;
+
+    padding:10px 20px;
+
+    cursor: pointer;}
 
 
