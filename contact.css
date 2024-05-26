@@ -19,6 +19,10 @@ body {
 }
 
 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     width: 25%;
     height: 0vh;
@@ -33,7 +37,6 @@ body {
     font-weight: bold;
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 8rem;
 }
 
 .contact form {

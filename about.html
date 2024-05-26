@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>За нас</title>
-    <link rel="stylesheet" href="navigation.css">
-    <link rel="stylesheet" href="about.css">
-</head>
-<body>
-<header class="navigation" id="navigation">
-    <div class="logo" title="Национална Агенция по Приходите">
+    <link rel="stylesheet" href="navigation.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="navigation" id="navigation">
+      <div class="logo" title="Национална Агенция по Приходите">
         <a href="home.html">
-            <img
-                    src="./assets/nra-logo.png"
-                    alt="eNap logo"
-                    style="width: 6rem"
-            />
+          <img
+            src="./assets/nra-logo.png"
+            alt="eNap logo"
+            style="width: 6rem"
+          />
         </a>
         <h2 style="margin-left: 1rem; font-weight: bold; font-size: 1.3em">
-            НАП
+          НАП
         </h2>
-    </div>
-    <div class="nav-list">
+      </div>
+      <div class="nav-list">
         <ul class="nav-elements">
-            <li><a class="nav-link" href="home.html">Начало</a></li>
-            <li><a class="nav-link" href="#services.html">Услуги</a></li>
-            <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
-            <li><a class="nav-link" href="help.html">Информация</a></li>
+          <li><a class="nav-link" href="home.html">Начало</a></li>
+          <li><a class="nav-link" href="validation.html">Справки</a></li>
+          <li><a class="nav-link" href="#taxes.html">Данъци</a></li>
+          <li><a class="nav-link" href="help.html">Информация</a></li>
         </ul>
         <div class="dropdown">
-            <button class="dropbtn">
-                Меню
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="validation.html">Справки</a>
-                <a href="about.html">За нас</a>
-                <a href="contact.html">Контакти</a>
-                <a href="map.html">Локации</a>
-                <a href="login.html">Вход</a>
-                <a href="register.html">Регистрация</a>
-            </div>
+          <button class="dropbtn">
+            Меню
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="about.html">За нас</a>
+            <a href="contact.html">Контакти</a>
+            <a href="map.html">Локации</a>
+            <a href="login.html">Вход</a>
+            <a href="register.html">Регистрация</a>
+          </div>
         </div>
+      </div>
+    </header>
+    <h2 class="heading">НАП: <span>Вашата връзка с данъчната система</span></h2>
+    <div class="page">
+      <div class="description">
+        <h4>
+          Националната агенция за приходите (НАП) е отговорна за събирането на
+          данъци и осигуровки в България. На нашия сайт можете:
+        </h4>
+        <ol>
+          <li>Да научите за данъците и таксите.</li>
+          <li>Да изчислите нетната си заплата и осигуровките си.</li>
+          <li>Да проверите дали ЕГН-тор ЕИК-то и ЛНЧ-то са ви валидни.</li>
+          <li>Да гледате често задавани въпроси.</li>
+          <li>Да се свържете с нас ако имате въпроси.</li>
+        </ol>
+        <h4><span>Нашата мисия:</span></h4>
+        Справедлива и прозрачна данъчна система за стимулиране на растежа и
+        благосъстоянието.
+        <br />
+        <h4><span>Нашите ценности:</span></h4>
+        Професионализъм, отговорност, етика, иновации, екипна работа.
+        <br /><br />
+      </div>
+      <img style="width: 50%" src="assets/about-page-image.png" />
     </div>
-</header>
-<div class="page">
-    <div class="description">
-        <h1 class="heading">За нас</h1>
-        <h2>НАП: Вашата връзка с данъчната система</h2>
-        <h3>Националната агенция за приходите (НАП) е отговорна за събирането на данъци и осигуровки в България.
-
-            На нашия сайт можете:
-
-            <ol>Да се регистрирате и влезете в профила си.</ol>
-            <ol>Да научите за данъците и таксите.</ol>
-            <ol>Да ползвате електронни услуги.</ol>
-            <ol>Да получите информация за контакти и карта на офисите ни.</ol>
-            Нашата мисия: Справедлива и прозрачна данъчна система за стимулиране на растежа и благосъстоянието.
-            <br>
-            Нашите ценности: Професионализъм, отговорност, етика, иновации, екипна работа.
-            <br><br></h3>
-        <button class="button"><a href="home.html" style="color:white">Запознайте се с НАП!</a></button>
-    </div>
-    <div class="image">
-        <img src="assets/aboutimage.png">
-    </div>
-</div>
-
-</body>
+  </body>
 </html>
