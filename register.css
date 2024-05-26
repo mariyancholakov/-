@@ -3,7 +3,7 @@ body {
     margin:0;
 }
 
-h1{
+h1 {
     color: #ffe57f;
 }
 
@@ -29,7 +29,7 @@ h1{
     color: gray;
 }
 
-input{
+input {
     height:7px;
     width: 95%;
 
@@ -41,7 +41,7 @@ input{
     margin-bottom:15px;
 }
 
-button{
+button {
     background-color: #4747f0;
     color:white;
 
@@ -69,14 +69,15 @@ button{
 
 }
 
-label{
+label {
     color: #ffe57f;
 }
 
-p{
+p {
     color: white;
 }
-a{
+
+a {
     color: #ffe57f;
 }
 
